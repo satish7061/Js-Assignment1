@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Operators & Expressions Questions</h1>
+
+    <h3>Qu 1. Write a program to add two Numbers?</h3>
+<pre>
+    const AddTwoNumbers = (a,b) => {
+        return a + b;
+    };
+</pre>
+    <h3>Qu 2. You are given two numbers and check if both conditions ((A<10) and (A>B)) are satisfied or not with the help of operators.</h3>
+<pre>
+    const Is_Valid = (a,b) => {
+        if ((a<10) && (a>b))
+          return true;
+        else
+          return false;
+    };  
+</pre>
+    <h3>Qu 3. You are given two numbers A and B. You need to do the following checks: 1. if both are divisible by 10 console true. 2.if both are not divisible by 10 console false. 3. if one of them only is divisible by 10 console true. Use operator to do this.</h3>
+ <pre>
+    const Check = (A, B) => 
+    {
+        if ((A % 10 == 0) && (B % 10 == 0))
+           return true;
+        else if ((A % 10 == 0) || (B % 10 == 0))
+           return true;
+        else
+           return false;
+    };
+</pre>
+
+    <h3>Qu 4. Find the first digit of a 4 digit number?</h3>
+<pre>
+    const First_Digit = (n) => {
+        let number = n % 1000;
+        let first = ((n - number)/1000);
+        return first;
+    };
+</pre>
+
+    <h3>Qu 5. Find the last digit of a 4 digit number?</h3>
+<pre>
+    const Last_Digit = (n) => {
+        let number = n % 10;
+        return number;
+    };
+</pre>
+    
+    <h3>Qu 6. Find the remainder of two numbers?</h3>
+<pre>
+    const Find_the_remainder = (a,b) => {
+        return (b%a);
+    };
+</pre>
+
+    <h3>Qu 7. Write a program to multipy two numbers?</h3>
+<pre>
+    const Multiply_two_number = (a,b) => {
+        return a*b;
+    };
+</pre>
+ 
+    <h3>Qu 8. Write a program for Marks Calculator which calculate total marks and average marks?</h3>
+<pre>
+    const Sum = (A, B, C) => 
+    {
+       return (A+B+C);
+    };
+
+    const Average = (A, B, C) => 
+    {
+       return ((A+B+C)/3);
+    };
+
+</pre>
+</body>
+</html>
